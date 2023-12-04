@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "playlist_app",
+    "name": "listify",
     "slug": "playlist_app",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "listify",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -11,9 +12,8 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cosmicavian.playlist_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b6036577-dbe9-48b4-b984-05646a4b06df"
+      }
+    },
+    "plugins": []
   }
 }
